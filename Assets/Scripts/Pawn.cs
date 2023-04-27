@@ -4,6 +4,7 @@ using UnityEngine;
 public class Pawn : ChessPiece
 {
     // Start is called before the first frame update
+    void Start(){
         private bool hasMoved = false;
 
         public override bool IsValidMove(ChessSquare targetSquare)
@@ -47,5 +48,5 @@ public class Pawn : ChessPiece
 
             hasMoved = true;
         }
-
+    }
 }
